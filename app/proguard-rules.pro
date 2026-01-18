@@ -19,3 +19,18 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+proguard
+-keepattributes *Annotation*
+-keepclassmembers,allowshrinking class * {
+    @org.koin.core.annotation.Module
+    *;
+    @org.koin.core.annotation.Factory
+    *;
+    @org.koin.core.annotation.Single
+    *;
+}
+-dontwarn org.koin.**
+-keep class com.google.android.material.** { *; }
+-keep class androidx.appcompat.** { *; }
+-keep interface androidx.appcompat.** { *; }
