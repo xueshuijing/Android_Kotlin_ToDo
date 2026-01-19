@@ -56,13 +56,11 @@ class ToDoRepositoryTest {
         itemsJob.cancel()
     }
 
-    // ... (your other tests can remain unchanged for now)
-
 
     @Test
     fun canModifyItems() = runTest {
         val underTest = ToDoRepository(db.todoStore(), this)
-        val testModel = ToDoModel(description ="test model")
+        val testModel = ToDoModel("test model")
         val replacement = testModel.copy(notes = "This is the replacement")
         val results = mutableListOf<List<ToDoModel>>()
         val itemsJob = launch {
@@ -99,7 +97,7 @@ class ToDoRepositoryTest {
     }
 
     @Test
-    fun canModifyItems2() = runTest {
+    fun canModifyItems_OnlyState() = runTest {
         val underTest = ToDoRepository(db.todoStore(), this)
         // GIVEN: An initial item is saved
         val testModel = ToDoModel(description = "test model") // Use named arguments
@@ -116,17 +114,15 @@ class ToDoRepositoryTest {
     }
 
     @Test
-    fun canRemoveItems2() = runTest {
+    fun canRemoveItems_OnlyState() = runTest {
         val underTest = ToDoRepository(db.todoStore(), this)
         // GIVEN: An item is saved
         val testModel = ToDoModel(description = "test model")
         underTest.save(testModel)
         // And we confirm it was added
         assertThat(underTest.items().first().size, equalTo(1))
-
         // WHEN: The item is deleted
         underTest.delete(testModel)
-
         // THEN: The repository is empty again
         assertThat(underTest.items().first(), empty())
     }
