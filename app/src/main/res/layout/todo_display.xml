@@ -34,8 +34,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="monospace"
         android:text="@string/created_on"
-        android:textAppearance="@style/HeadlineTwoAppearance"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintEnd_toStartOf="@+id/createdOnTV"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descTV" />
 
@@ -44,11 +47,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="monospace"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toTopOf="@+id/notesTV"
         app:layout_constraintEnd_toStartOf="@+id/completedIC"
-        app:layout_constraintStart_toEndOf="@+id/createdLabel"
-        app:layout_constraintTop_toBottomOf="@+id/descTV" />
+        app:layout_constraintStart_toEndOf="@+id/createdLabel" />
 
     <TextView
         android:id="@+id/notesTV"
@@ -62,5 +67,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/createdOnTV" />
+        app:layout_constraintTop_toBottomOf="@+id/createdLabel" />
 </androidx.constraintlayout.widget.ConstraintLayout>
