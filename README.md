@@ -11,14 +11,14 @@ This project is based on *AndExplore-Final* by Mark L. Murphy and has been moder
 ---
 ## 📱 Screenshots
 <p align="center">
-  <img src="screenshots/main.png" width="250"/>
-  <img src="screenshots/edit.png" width="250"/>
-  <img src="screenshots/completed.png" width="250"/>
+  <img src="screenshots/empty_state.jpg" width="250"/>
+  <img src="screenshots/create_task.jpg" width="250"/>
+  <img src="screenshots/edit_task.jpg" width="250"/>
 </p>
 
 <p align="center">
-  <img src="screenshots/empty.png" width="250"/>
-  <img src="screenshots/darkmode.png" width="250"/>
+  <img src="screenshots/main_screen.jpg" width="250"/>
+  <img src="screenshots/main_screen02.jpg" width="250"/>
 </p>
 
 
