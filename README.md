@@ -9,6 +9,14 @@ The application supports creating, updating, and deleting tasks, with structured
 This project is based on *AndExplore-Final* by Mark L. Murphy and has been modernized by replacing deprecated libraries, fixing compatibility issues, and improving structure and documentation.
 
 ---
+## 📱 Screenshots
+![Screenshot_2026-03-04-18-39-52-06_2f937a25d6d72e388c5662add9dda914](https://github.com/user-attachments/assets/015356f4-6d8a-4a64-abc0-2665c61d551b)
+![Screenshot_2026-03-04-18-40-23-66_2f937a25d6d72e388c5662add9dda914](https://github.com/user-attachments/assets/e1ad2610-71b4-41ec-a58d-7019dfaab420)
+![Screenshot_2026-03-04-18-41-09-97_2f937a25d6d72e388c5662add9dda914](https://github.com/user-attachments/assets/5afb0a86-f923-4cb3-a947-c285ff947647)
+![Screenshot_2026-03-04-18-41-17-64_2f937a25d6d72e388c5662add9dda914](https://github.com/user-attachments/assets/a3cb20d0-8a73-4b00-bdcc-2cc98bebd692)
+![Screenshot_2026-03-04-18-43-08-09_2f937a25d6d72e388c5662add9dda914](https://github.com/user-attachments/assets/4f23a279-b9de-48cd-a09f-3abe2230063d)
+
+
 
 ## ✨ Features
 
