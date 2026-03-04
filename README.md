@@ -1,25 +1,98 @@
-# ToDo Android App
+# Android Kotlin ToDo App
 
-A simple and modern ToDo list application for Android, built using suitable Jetpack libraries and a clean, Model-View-ViewModel (MVVM) architecture.
-This is build based on AndExplore-Final book written by Mark L. Murphy, with the provided starter pack.
-Some changes are made to fix depreceated libraries and to fix errors. 
-Comments are added to explain what the class and methods do. 
+## 📌 Overview
 
-## 🚀 Features
+A modern To-Do list Android application built with **Kotlin** using **Jetpack Compose** and a clean **Model-View-ViewModel (MVVM)** architecture.
 
-*   View a list of all to-do items.
-*   Add new to-do items.
-*   Edit existing to-do items.
-*   Delete items from the list.
+The application supports creating, updating, and deleting tasks, with structured local data persistence powered by **Room**. The project emphasizes clean architecture, dependency injection, asynchronous data handling, and testable design.
 
-## 🛠️ Built With
+This project is based on *AndExplore-Final* by Mark L. Murphy and has been modernized by replacing deprecated libraries, fixing compatibility issues, and improving structure and documentation.
 
-*   **[Kotlin](https://kotlinlang.org/)**: The official programming language for Android development.
-*   **[Coroutines](https://kotlinlang.org/docs/coroutines-overview.html)**: For managing background threads and asynchronous operations.
-*   **[Flow](https://developer.android.com/kotlin/flow)**: Used to handle streams of data from the repository to the UI.
-*   **[Android Jetpack](https://developer.android.com/jetpack)**:
-    *   **ViewModel**: Manages UI-related data in a lifecycle-conscious way.
-    *   **Room**: A persistence library providing an abstraction layer over SQLite.
-    *   **Navigation Component**: For handling all in-app navigation.
-*   **[Koin](https://insert-koin.io/)**: A lightweight dependency injection framework for Kotlin.
+---
 
+## ✨ Features
+
+- Add new tasks  
+- Edit existing tasks  
+- Delete tasks  
+- Persistent local storage using Room (SQLite abstraction)  
+- Reactive UI updates using Kotlin Flow  
+- Modern UI built entirely with Jetpack Compose  
+- Clean MVVM architecture  
+- Dependency injection with Koin  
+- Coroutine-based unit testing  
+
+---
+
+## 🛠 Tech Stack
+
+- Kotlin  
+- Jetpack Compose  
+- Android SDK  
+- Room (SQLite abstraction layer)  
+- Kotlin Coroutines & Flow  
+- Koin (Dependency Injection)  
+- JUnit & Mockito (Unit Testing)  
+
+---
+
+## 🏗 Architecture
+
+The application follows a clean MVVM architecture:
+
+- **Composable UI Layer** – Built entirely with Jetpack Compose  
+- **ViewModel Layer** – Manages state and business logic  
+- **Repository Layer** – Abstracts data access  
+- **Room DAO** – Uses `Flow` for reactive queries and `suspend` functions for asynchronous operations  
+
+Dependency injection is managed using **Koin** to ensure modularity and testability.
+
+---
+
+## 🧪 Testing
+
+The project includes coroutine-based unit tests for ViewModel logic and repository interactions.
+
+Testing features include:
+
+- `runTest` for structured coroutine testing  
+- Mocked repository verification  
+- Flow collection testing  
+- Dispatcher control using `StandardTestDispatcher`  
+
+This ensures correct state management and correct interaction behaviour.
+
+---
+
+## 📚 What I Learned
+
+Through this project, I strengthened my understanding of:
+
+- Declarative UI development with Jetpack Compose  
+- Reactive state management using Flow  
+- Asynchronous programming using Coroutines  
+- Dependency injection and modular architecture  
+- Writing clean, maintainable, and testable Android code  
+
+---
+
+## 🚀 Future Improvements
+
+- Expand unit test coverage  
+- Add UI testing (Compose testing framework)  
+- Improve CI/CD integration  
+- Enhance UI polish and animations  
+
+---
+
+## ▶️ How to Run
+
+1. Clone the repository  
+2. Open the project in Android Studio  
+3. Build and run on an emulator or physical device  
+
+---
+
+## 👤 Author
+
+Developed by Xue Jing Sie  
