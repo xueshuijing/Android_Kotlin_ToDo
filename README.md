@@ -65,7 +65,7 @@ Dependency injection is managed using **Koin** to ensure modularity and testabil
 
 ## 🧪 Testing
 
-The project includes coroutine-based unit tests for ViewModel logic and repository interactions.
+The project includes coroutine-based unit tests for ViewModel logic and repository interactions, as well as instrumented tests for repository operations with Room.
 
 Testing features include:
 
@@ -73,10 +73,12 @@ Testing features include:
 - Mocked repository verification  
 - Flow collection testing  
 - Dispatcher control using `StandardTestDispatcher`  
+- Instrumented Room database tests to validate Flow emissions and state changes  
+- Verification of save, modify, and delete operations in the repository  
+- Testing both intermediate flow states and the final repository state  
 
-This ensures correct state management and correct interaction behaviour.
+This ensures correct state management, accurate Flow behavior, and reliable repository interactions in both local and instrumented contexts.
 
----
 
 ## 📚 What I Learned
 
@@ -93,9 +95,10 @@ Through this project, I strengthened my understanding of:
 ## 🚀 Future Improvements
 
 - Expand unit test coverage  
-- Add UI testing (Compose testing framework)  
+- Add filtering (All / Completed / Active)
+- Enhance UI polish and animations 
 - Improve CI/CD integration  
-- Enhance UI polish and animations  
+ 
 
 ---
 
@@ -107,6 +110,3 @@ Through this project, I strengthened my understanding of:
 
 ---
 
-## 👤 Author
-
-Developed by Xue Jing Sie  
