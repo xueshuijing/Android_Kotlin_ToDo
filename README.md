@@ -23,30 +23,26 @@ This project is based on *AndExplore-Final* by Mark L. Murphy and has been moder
 
 
 
-
 ## ✨ Features
 
 - Add new tasks  
 - Edit existing tasks  
 - Delete tasks  
 - Persistent local storage using Room (SQLite abstraction)  
-- Reactive UI updates using Kotlin Flow  
-- Modern UI built entirely with Jetpack Compose  
-- Clean MVVM architecture  
-- Dependency injection with Koin  
-- Coroutine-based unit testing  
 
 ---
 
 ## 🛠 Tech Stack
 
-- Kotlin  
-- Jetpack Compose  
-- Android SDK  
-- Room (SQLite abstraction layer)  
-- Kotlin Coroutines & Flow  
-- Koin (Dependency Injection)  
-- JUnit & Mockito (Unit Testing)  
+- **Kotlin**  
+- **Jetpack Compose**  
+- **MVVM Architecture**  
+- **Room (SQLite)**  
+- **Kotlin Flow**  
+- **Koin (Dependency Injection)**  
+- **Coroutines**  
+- **Unit Testing (JUnit, Mockito)**  
+- **Instrumented Testing**
 
 ---
 
